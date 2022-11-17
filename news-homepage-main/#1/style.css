@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 99.1vw;
+    height: 138vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+    font-family: sans-serif;
+    src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+    src: url(assets/fonts/static/Inter-Bold.ttf) format('truetype') url(assets/fonts/static/Inter-ExtraBold.ttf) format('truetype') url(assets/fonts/static/Inter-Regular.ttf) format('truetype');
+}
+
+.contenu {
+    width: 78%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.head {
+    width: 100%;
+    height: 6%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.letra {
+    font-weight: bold;
+    font-size: 530%;
+    background-color: transparent;
+}
+
+.tete {
+    position: relative;
+    width: 41%;
+    background-color: transparent;
+    display: flex;
+}
+
+ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+ul a {
+    text-decoration: none;
+    font-size: 150%;
+    color: rgb(111, 111, 111);
+}
+
+.burger {
+    display: none;
+}
+
+.corps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60%;
+    margin-bottom: 100px;
+    flex-wrap: wrap;
+}
+
+.corps .gauche {
+    width: 65.8%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.corps .gauche .haut {
+    width: 100%;
+    height: 59%;
+    background-color: transparent;
+}
+
+.desktop {
+    width: 100%;
+    height: 100%;
+}
+
+.mobile {
+    width: 0%;
+    height: 0%;
+}
+
+.corps .gauche .bas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 34%;
+}
+
+.corps .gauche .bas .gauche {
+    width: 45%;
+    background-color: transparent;
+    font-size: 400%;
+    display: flex;
+    justify-content: center;
+    line-height: 110%;
+}
+
+.corps .gauche .bas .droite {
+    width: 48%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.corps .gauche .bas .droite .haut {
+    width: 100%;
+    height: 55%;
+    background-color: transparent;
+    font-size: 135%;
+    line-height: 140%;
+}
+
+.corps .gauche .bas .droite .bas {
+    width: 53%;
+    height: 27%;
+    background-color: rgb(222, 102, 16);
+    text-decoration: none;
+}
+
+.read {
+    width: 100%;
+    height: 100%;
+    font-size: 120%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 5px;
+}
+
+.corps .droite {
+    width: 31.5%;
+    background-color: #0a0a29;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.texte {
+    width: 82%;
+    height: 86%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 230%;
+}
+
+.titre {
+    font-size: 350%;
+}
+
+h3 {
+    font-size: 170%;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news p {
+    font-size: 130%;
+    color: rgb(152, 150, 150);
+}
+
+.traits {
+    width: 100%;
+    height: 1px;
+    background-color: rgb(111, 111, 111);
+}
+
+.orange {
+    color: rgb(248, 177, 45);
+}
+
+.blanc {
+    color: #fff;
+}
+
+p {
+    color: rgb(111, 111, 111);
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 14%;
+}
+
+.articles {
+    background-color: transparent;
+    width: 31.5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.articles .images {
+    width: 28%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.articles .texte {
+    width: 63%;
+    height: 100%;
+    background-color: transparent;
+}
+
+.tech {
+    width: 100%;
+    height: 100%;
+}
+
+.numeros {
+    color: rgb(201, 198, 198);
+    font-size: 280%;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+.tex {
+    font-size: 132%;
+}
+
+ul a:hover {
+    color: orange;
+}
+
+#leer:hover {
+    background-color: #0a0a29;
+}
+
+h3:hover {
+    color: orange;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 400px) {
+    body {
+        height: 220vh;
+    }
+
+    .contenu {
+        width: 92%;
+        height: 100%;
+    }
+
+    .head {
+        position: relative;
+        height: 4%;
+        margin-bottom: 0;
+    }
+
+    .letra {
+        font-size: 260%;
+    }
+
+    .tete {
+        display: flex;
+        width: 0;
+        height: 100vh;
+        position: absolute;
+        top: 0px;
+        right: -20px;
+        background-color: #fff;
+    }
+
+    .burger {
+        display: flex;
+        position: absolute;
+        right: 5px;
+        top: 30px;
+    }
+
+    .open .tete {
+        width: 70%;
+    }
+
+    ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: normal;
+        padding-left: 10%;
+        padding-top: 55%;
+        line-height: 300%;
+    }
+
+    ul a {
+        display: block;
+        font-size: 125%;
+        color: #000;
+    }
+
+
+
+    .corps {
+        height: 66%;
+        margin-bottom: 0px;
+    }
+
+    .corps .gauche {
+        width: 100%;
+        height: 52%;
+    }
+
+    .corps .gauche .haut {
+        height: 45%;
+    }
+
+    .desktop {
+        width: 0%;
+        height: 0%;
+    }
+
+    .mobile {
+        width: 100%;
+        height: 100%;
+    }
+
+    .corps .gauche .bas {
+        height: 50%;
+        flex-wrap: wrap;
+    }
+
+    .corps .gauche .bas .gauche {
+        width: 100%;
+        height: 46%;
+        font-size: 220%;
+    }
+
+    .corps .gauche .bas .droite {
+        width: 100%;
+        height: 54%;
+        font-size: 70%;
+    }
+
+    .corps .gauche .bas .droite .haut {
+        line-height: 170%;
+    }
+
+    .corps .droite {
+        width: 100%;
+        height: 39%;
+    }
+
+    .corps .droite .texte {
+        width: 87%;
+        height: 91%;
+    }
+
+    .corps .droite .texte .titre {
+        font-size: 170%;
+    }
+
+    .corps .droite .texte .news .blanc {
+        font-size: 130%;
+    }
+
+    .corps .droite .texte .news p {
+        font-size: 95%;
+        line-height: 180%;
+    }
+
+    .footer {
+        height: 24%;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer .articles {
+        width: 100%;
+        height: 29%;
+    }
+
+    .footer .numeros {
+        font-size: 200%;
+        font-weight: bold;
+    }
+
+    .footer h3 {
+        font-size: 120%;
+    }
+
+    .footer .tex {
+        font-size: 90%;
+        line-height: 180%;
+    }
+
+
+}
